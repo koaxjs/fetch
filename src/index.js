@@ -38,4 +38,4 @@ function fetch (url = '', params = {}) {
  * Exports
  */
 
-export {fetch, fetchEffect}
+export {fetch, fetchEffect, type: FETCH}
