@@ -35,6 +35,11 @@ Action creator. See [sane-fetch](//github.com/joshrtay/sane-fetch) for more deta
 
 **Returns:** action object
 
+### fetchEffect()
+Effect driver.
+
+**Returns:** koax middleware
+
 ## License
 
 MIT
