@@ -1,0 +1,24 @@
+{
+  "name": "@koax/fetch",
+  "description": "Fetch effect driver and action creators.",
+  "repository": "git://github.com/koaxjs/fetch.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "make build",
+    "postpublish": "make clean",
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "sane-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-polyfill": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "koax": "^0.3.0",
+    "tape": "^4.2.2"
+  }
+}
