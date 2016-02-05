@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Fetch effect driver and action creators.
+Fetch effect driver and action creator.
 
 ## Installation
 
@@ -15,17 +15,25 @@ Fetch effect driver and action creators.
 ## Usage
 
 ```js
-import fetch from '@koax/fetch'
+import koax from 'koax'
+import {fetch, fetchEffect} from '@koax/fetch'
+
+let app = koax()
+app.use(fetchEffect())
+
+app(fetch('google.com')).then((res) => res.status) // => 200
 
 ```
 
 ## API
 
-### fetch(arg)
+### fetch(url, params)
+Action creator. See [sane-fetch](//github.com/joshrtay/sane-fetch) for more details.
 
-- `arg` -
+- `url` - url
+- `params` - request paramaters
 
-**Returns:**
+**Returns:** action object
 
 ## License
 
