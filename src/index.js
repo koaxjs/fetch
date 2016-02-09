@@ -4,7 +4,7 @@
 
 import saneFetch from 'sane-fetch'
 
-const FETCH = 'KOAX_FETCH'
+const FETCH = '@koax/fetch/FETCH'
 
 /**
  * Fetch effect drive
@@ -38,4 +38,4 @@ function fetch (url = '', params = {}) {
  * Exports
  */
 
-export {fetch, fetchEffect, FETCH as type}
+export {fetch, fetchEffect, FETCH as fetchType}
